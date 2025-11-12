@@ -1,0 +1,23 @@
+[package]
+name = "instagres"
+version = "0.1.0-wip"
+description = "WIP:: Rust SDK for instant PostgreSQL instance provisioning via Neon"
+keywords = ["wip", "experimental", "unstable"]
+edition = "2021"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/atilafassina/instagres-rs"
+documentation = "https://docs.rs/instagres"
+authors = ["Atila Fassina <atila.io>"]
+
+[lib]
+name = "instagres"
+path = "src/lib.rs"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1.18", features = ["v7"] }
